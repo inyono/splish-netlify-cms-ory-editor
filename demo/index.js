@@ -2,11 +2,14 @@ import CMS, { init } from 'netlify-cms';
 
 import 'netlify-cms/dist/cms.css';
 
+import { ORYEditorPreview } from '../src/preview';
+
 init({
   config: {
     backend: {
       name: 'test-repo'
     },
+    // publish_mode: 'editorial_workflow',
     media_folder: 'demo/media',
     public_folder: '/media',
     collections: [
@@ -38,3 +41,5 @@ init({
     ]
   }
 });
+
+CMS.registerPreviewTemplate('pages', ORYEditorPreview);
