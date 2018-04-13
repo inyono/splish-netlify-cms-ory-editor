@@ -3,5 +3,17 @@
   "version": "0.0.0",
   "author": "Splish UG (haftungsbeschränkt)",
   "license": "UNLICENSED",
+  "scripts": {
+    "format":
+      "splish-scripts format --write \"{{src,demo}/**/*,*}.{ts,tsx,js,jsx,json,css,scss,less}\"",
+    "start": "parcel demo/index.html"
+  },
+  "dependencies": {
+    "netlify-cms": "^1.5.0"
+  },
+  "devDependencies": {
+    "@splish-me/scripts": "^1.0.3",
+    "parcel-bundler": "^1.7.0"
+  },
   "private": true
 }
