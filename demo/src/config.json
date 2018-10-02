@@ -1,0 +1,34 @@
+{
+  "backend": {
+    "name": "local"
+  },
+  "media_folder": "demo/media",
+  "public_folder": "/media",
+  "collections": [
+    {
+      "name": "blog",
+      "label": "Post",
+      "folder": "src/posts",
+      "create": true,
+      "slug": "{{year}}-{{month}}-{{day}}-{{slug}}",
+      "fields": [
+        {
+          "label": "Layout",
+          "name": "layout",
+          "widget": "hidden",
+          "default": "blog"
+        },
+        {
+          "label": "Title",
+          "name": "title",
+          "widget": "string"
+        },
+        {
+          "label": "Content",
+          "name": "content",
+          "widget": "string"
+        }
+      ]
+    }
+  ]
+}

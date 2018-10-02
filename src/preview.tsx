@@ -13,9 +13,9 @@ export class ORYEditorPreview extends React.Component {
 
     console.log(entry.toJS(), fieldsMetaData.toJS());
 
-    /*
-    Include template system from react-static or do some context magic
-    */
+    // /*
+    // Include template system from react-static or do some context magic
+    // */
 
     return (
       <div
